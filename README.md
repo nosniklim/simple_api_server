@@ -1,3 +1,6 @@
+## Overview
+Simple API Server using Node.js and MongoDB
+
 ## Setup
 ```
 docker-compose up -d
