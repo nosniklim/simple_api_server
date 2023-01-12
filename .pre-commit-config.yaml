@@ -1,0 +1,9 @@
+repos:
+  - repo: local
+    hooks:
+    - id: eslint
+      name: eslint
+      entry: npm run lint:eslint
+      language: node
+      files: '\.(es6|tsx|ts|js)$'
+      args: ['--', '--color', '--quiet']
