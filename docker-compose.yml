@@ -8,3 +8,14 @@ services:
     tty: true
     ports:
       - "80:8080"
+  db:
+    image: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: $ROOT_USERNAME
+      MONGO_INITDB_ROOT_PASSWORD: $ROOT_PASSWORD
+    ports:
+      - 27017:27017
+    volumes:
+      - ./db:/data/db
+      - ./configdb:/data/configdb
