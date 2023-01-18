@@ -6,7 +6,7 @@ Define environment variables for MongoDB.
 ```
 touch .env
 echo "ROOT_USERNAME=[e.g. root]" >> .env
-echo "ROOT_PASSWORD=[Password]" >> .env
+echo "ROOT_PASSWORD=[e.g. password]" >> .env
 ```
 
 ## Start application
@@ -19,6 +19,14 @@ docker-compose up -d
 docker-compose exec app node server.js
 ```
 
+--------------------------------------------------------------------------------
+## How to access
+- `curl 127.0.0.1`
+- `curl localhost`
+- By using browser
+
+--------------------------------------------------------------------------------
+
 ## Stop server
 `Ctrl` + `C`
 
@@ -26,8 +34,3 @@ docker-compose exec app node server.js
 ```
 docker-compose down
 ```
-
-## How to access
-- `curl 127.0.0.1`
-- `curl localhost`
-- By using browser
