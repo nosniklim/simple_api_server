@@ -6,7 +6,7 @@
   },
   "scripts": {
     "eslint": "npx eslint . --ext .js",
-    "prettier": "npx prettier . --ext .js"
+    "prettier": "npx prettier --check '*.js'"
   },
   "pre-commit": [
     "eslint",
