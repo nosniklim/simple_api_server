@@ -32,3 +32,9 @@ docker-compose exec app node server.js
 ```
 docker-compose down
 ```
+
+## How to Use Linter
+If you'd like to use linter, execute the following command.
+```
+docker-compose exec app npm install --save-dev
+```
